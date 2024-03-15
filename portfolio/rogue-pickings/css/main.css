@@ -1,0 +1,225 @@
+html{
+	font-size: 16px; /*generic and mobile*/
+}
+
+body { /*generic and mobile styles*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em; 
+	background-color: #f5f5f5; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.container{ /*generic and mobile styles*/
+	max-width: 1200px;
+	width: 90%; /*smaller mobile screens*/
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap; /*wrap the content; row direction is default*/
+}
+/*Text Styles*/
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em; /*30px/16px*/
+}
+h2 {
+    font-size: 1.125em; /*18px/16px*/
+}
+h3, p {
+	font-size: 0.875em; /*14px/16px*/
+}
+
+
+p {
+	line-height: 21px;
+}
+
+/*Header Styles*/
+
+header { /*generic and mobile styles*/
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	flex-flow: wrap;
+	text-align: center;
+	width: 100%;
+}
+
+header h1 { /*generic and mobile styles*/
+	border-bottom: 3px solid #77a466; /*added for mobile*/
+	margin: 0;
+	padding: 38px 20px 20px 20px; /* originally 38px 0*/
+	width: 100%;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0; /*originally 46px 0*/
+	width: 100%;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em; /*14px/16px*/
+	padding: 10px 0; /*originally 0 10px*/
+	list-style: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*Top  Section*/
+.top,
+.bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+}
+
+.hero {
+	height: auto;
+}
+ 
+img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	margin: 18px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+/*Bottom Section*/
+.one,
+.two,
+.three {
+	width: 100%;
+	border-top: 1px solid #eee;
+	
+}
+
+#menu {
+	list-style: none;
+	padding: 0;
+}
+#menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+#reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+#locations {
+	font-size: 1em;
+	line-height: 24px;
+}
+/*Footer*/
+footer {
+	border-top: 3px solid #eee;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+footer p{
+	font-size: 0.875em; /*14px/16px*/;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+footer span {
+	font-family: Wisdom Script, cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.750em /*12px/14px*/
+}
+
+@media all and (min-width:768px) {
+	/* Tablet styles here */
+	
+	.bottom{
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+	}
+
+	.one,
+	.two,
+	.three {
+		border-top: none;
+		flex-basis: 30%;/*affects width because flex-direction is row*/
+	}
+
+	.two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+		
+	}
+
+
+
+@media all and (min-width:1200px) {
+	/* Desktop styles here */
+	.container {
+		width: 100%;
+	}
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+			width: 30%;
+			padding: 38px 0;
+			border-bottom: none;
+			text-align: left;
+	}
+
+	header nav {
+			width: 40%;
+			padding: 46px 0;
+	}
+
+	header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+	  padding: 0 10px;
+  }
+} 
