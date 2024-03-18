@@ -155,7 +155,7 @@ header {
 header h1 {
   font-family: 'Roboto', sans-serif;
   color: #49403B;
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 1.875rem 1.875rem 0;
   /*30px*/
 }
@@ -211,7 +211,7 @@ a:hover {
   margin: 10px 20px;
 }
 
-/*** PORTFOLIO ***/
+/*** GALLERY AREA ***/
 
 .gallery-area {
   text-align: center;
@@ -228,7 +228,8 @@ a:hover {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
   font-size: 2.3em;
-  margin: 5rem 1.875rem 1.875rem;
+  margin: 5rem 0;
+  width: 100%;
 
 }
 
@@ -236,7 +237,7 @@ a:hover {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
   font-size: 1.3em;
-  margin: 4rem;
+  margin: 4.5rem;
 }
 
 .photo {
@@ -267,7 +268,6 @@ figure {
 
 /*** ABOUT ***/
 .about-me {
-  background-color: #F3EBBA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,17 +275,26 @@ figure {
   margin-top: 30px;
 }
 
-.about-me h3,
-.contact-me h3 {
+.about-me h2 {
+  width: 100%;
+  background-color: #F0EAD2;
   color: #49403B;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.625em;
+  font-size: 2.3em;
   text-align: center;
+  padding: 1.875rem;
+  margin: 5rem 0;
 }
 
 #about-info {
   text-align: center;
-  margin: 30px 40px;
+  margin: 3.75rem 2.8125rem;
+  /*60px 45px*/
+  line-height: 180%;
+}
+
+.about-me img {
+  border-radius: 15px;
 }
 
 /*** CONTACT ***/
@@ -325,7 +334,7 @@ figure {
 
 /*** FOOTER ***/
 footer {
-  background-color: #F3EBBA;
+  background-color: #F0EAD2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +393,9 @@ footer p {
   #about-info {
     flex: 1 0 40%;
     /*I have to take margins into account*/
-    margin: 15px 30px 15px 0;
+    margin: 15px 35px 15px 10px;
+    /*15px 30px 15px 0*/
+    font-size: 1.125rem;
   }
 
   #wrapper {
@@ -432,6 +443,7 @@ footer p {
 
   .hero-area {
     padding-top: 65rem;
+    /*to see the whole hero image*/
   }
 
   .main-title {
@@ -444,65 +456,12 @@ footer p {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 
-  .small-screens-heading {
-    /*hide the heading for small screens*/
-    display: none;
-  }
-
-  .project-image {
-    width: 49%;
-  }
-
-  .project-image a:hover {
-    border: 3px solid darkgreen;
-  }
-
-  .project-info {
-    display: flex;
-    align-content: flex-start;
-    /*align all the content (even the multi-line p) to the left*/
-    flex-flow: column wrap;
-    /*main axis = vertical*/
-    flex: 1 0 40%;
-    /*creates 2 columns*/
-    justify-content: center;
-    /*center along the main axis*/
-    margin-left: 20px;
-  }
-
-  .big-screens-heading {
-    /*for desktops and bigger screens*/
-    display: inline;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.625em;
-    margin: 20px 0;
-
-  }
-
-  .project-info h5 {
-    margin: 20px 0;
-    font-size: 1.125em;
-  }
-
-  .project-description {
-    width: 40%;
-    font-size: 1.125em;
-    line-height: 1.625em;
-  }
-
-  /*to deactivate certain mobile and tablet settings*/
-
-
-  .text {
-    padding: initial;
-  }
-
 
   /*About*/
 
-  .about-me h3,
-  .contact-me h3 {
-    font-size: 2em;
+  .about-me h2 {
+    margin-bottom: 6.875rem;
+    /*80px + 30px*/
   }
 
   #about figure {
@@ -510,8 +469,9 @@ footer p {
   }
 
   #about-info {
-    font-size: 1.25em;
-    line-height: 1.750em;
+    font-size: 1.25rem;
+    margin: 3.75rem 3.75rem 3.75rem 2.8125rem;
+    /*60px 60px 60px 45px*/
   }
 
   /*Contact*/
