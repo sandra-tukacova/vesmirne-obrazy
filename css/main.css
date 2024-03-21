@@ -215,6 +215,7 @@ a:hover {
 
 .gallery-area {
   text-align: center;
+  margin: 5rem 0;
 }
 
 .gallery-items {
@@ -272,7 +273,6 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin-top: 30px;
 }
 
 .about-me h2 {
@@ -283,7 +283,11 @@ figure {
   font-size: 2.3em;
   text-align: center;
   padding: 1.875rem;
-  margin: 5rem 0;
+  margin: 0;
+}
+
+#about {
+  margin-top: 5rem;
 }
 
 #about-info {
@@ -302,7 +306,8 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  margin-bottom: 5rem;
 }
 
 #contact {
@@ -314,22 +319,28 @@ figure {
 
 }
 
-#contact a {
+.contact-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-me a {
   color: black;
+  font-size: 1.125rem;
 }
 
-#contact a:hover {
-  background-color: #868542;
-  color: snow;
+.contact-me a:hover {
+  font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: #868542;
+  color: #49403B;
 }
 
-#social {
+#phone {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 /*** FOOTER ***/
@@ -345,6 +356,8 @@ footer {
 footer p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875em;
+  color: #49403B;
+  padding: 1rem;
 }
 
 /***Layout for tablets***/
@@ -383,7 +396,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
+    margin: 5rem 0;
   }
 
   #about figure {
@@ -398,22 +411,17 @@ footer p {
     font-size: 1.125rem;
   }
 
-  #wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .contact-me {
+    justify-content: space-around;
+    /*move contact info to the oposite sides*/
+    width: 100%;
     flex-flow: row wrap;
   }
 
-  #info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-
-  .contact-me #bubble {
-    width: 40%;
+  #contact,
+  #phone {
+    flex-flow: row wrap;
+    /*display the contact info next to the icon*/
   }
 
   footer p {
@@ -476,27 +484,12 @@ footer p {
 
   /*Contact*/
 
-  .contact-me {
-    width: 100%;
-    flex-flow: column wrap;
-  }
 
-  #wrapper {
-    width: 90%;
-    justify-content: space-evenly;
-  }
 
   #contact p {
     font-size: 1.125em;
   }
 
-  .contact-me #bubble {
-    width: 49%;
-  }
-
-  #bubble img {
-    border-radius: 30%;
-  }
 
   footer {
     font-size: 1.125em;
