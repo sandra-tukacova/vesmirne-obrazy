@@ -310,7 +310,7 @@ figure {
   margin-bottom: 5rem;
 }
 
-#contact {
+#e-mail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,6 +383,7 @@ footer p {
 
   .gallery-area {
     width: 100%;
+    margin: 5rem 0 6.5rem;
   }
 
 
@@ -418,7 +419,7 @@ footer p {
     flex-flow: row wrap;
   }
 
-  #contact,
+  #e-mail,
   #phone {
     flex-flow: row wrap;
     /*display the contact info next to the icon*/
@@ -478,15 +479,16 @@ footer p {
 
   #about-info {
     font-size: 1.25rem;
-    margin: 3.75rem 3.75rem 3.75rem 2.8125rem;
-    /*60px 60px 60px 45px*/
+    margin: auto 1.875rem;
+    /*30px*/
   }
 
   /*Contact*/
 
 
 
-  #contact p {
+  #e-mail p,
+  #phone p {
     font-size: 1.125em;
   }
 
