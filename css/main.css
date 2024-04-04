@@ -418,7 +418,7 @@ footer p {
   #about-info {
     flex: 1 0 40%;
     /*I have to take margins into account*/
-    margin: 15px 35px 15px 10px;
+    margin: 15px 35px 15px 20px;
     /*15px 30px 15px 0*/
     font-size: 1.125rem;
   }
@@ -490,8 +490,7 @@ footer p {
 
   #about-info {
     font-size: 1.25rem;
-    margin: auto 1.875rem;
-    /*30px*/
+    
   }
 
   /*Contact*/
