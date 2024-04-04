@@ -228,6 +228,8 @@ a:hover {
 .gallery-area h2 {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 2.3em;
   margin: 5rem 0;
   width: 100%;
@@ -237,8 +239,17 @@ a:hover {
 .gallery-area h3 {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.3em;
   margin: 4.5rem;
+}
+
+.gallery-area h4 {
+  color: #49403B;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-top: 0;
 }
 
 .photo {
