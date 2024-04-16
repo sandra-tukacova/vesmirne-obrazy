@@ -154,7 +154,7 @@ header {
 
 header h1 {
   font-family: 'Roboto', sans-serif;
-  color: #49403B;
+  color: #9385B8; /*#674D70 #9385B8*/
   font-size: 2.5em;
   margin: 1.875rem 1.875rem 0;
   /*30px*/
@@ -182,11 +182,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #49403B;
+  color: #9385B8;
   font-size: 1.2rem;
 }
 
-a:hover {
+nav li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
 }
@@ -196,7 +196,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../img/hero.jpeg') center no-repeat;
+  background: url('../img/hero.png') center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 500px;
@@ -213,7 +213,8 @@ a:hover {
 
 /*** GALLERY AREA ***/
 
-.gallery-area {
+.gallery-area,
+.project-area {
   text-align: center;
   margin: 5rem 0;
 }
@@ -225,7 +226,8 @@ a:hover {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.gallery-area h2 {
+.gallery-area h2,
+.project-area h2 {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -236,7 +238,8 @@ a:hover {
 
 }
 
-.gallery-area h3 {
+.gallery-area h3,
+.project-area h3 {
   color: #49403B;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -245,11 +248,19 @@ a:hover {
   margin: 4.5rem;
 }
 
-.gallery-area h4 {
+
+.gallery-area h4,
+.project-area h4 {
   color: #49403B;
   font-weight: 300;
   font-size: 1.2em;
   margin-top: 0;
+}
+
+.project-info{
+  grid-column: 1/-1;
+  line-height: 180%;
+  margin: 0 35px 35px;
 }
 
 .photo {
@@ -275,6 +286,23 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+#pointer{
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#pointer a{
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.project-info a:hover{
+  font-weight: 400;
+  color: #49403B
 }
 
 
@@ -306,6 +334,17 @@ figure {
   margin: 3.75rem 2.8125rem;
   /*60px 45px*/
   line-height: 180%;
+}
+
+#about-info a{
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#about-info a:hover{
+  font-weight: 400;
+  color: #49403B
 }
 
 .about-me img {
@@ -354,6 +393,44 @@ figure {
   flex-flow: column wrap;
 }
 
+#account{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  color: black;
+}
+/*** PROJECT ***/
+.project-area{
+  width: 100%;
+}
+
+.project-area h2{
+  margin-top: 0;
+}
+
+.project-area h4{
+  margin: 3rem;
+}
+
+.project-area .gallery-items{
+  margin-bottom: 0
+}
+#cards-info{
+  margin-bottom: 0;
+}
+
+#cards-info a{
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
+
 /*** FOOTER ***/
 footer {
   background-color: #F0EAD2;
@@ -400,6 +477,11 @@ footer p {
 
   .sub-heading {
     grid-column: 1/-1;
+  }
+
+  .project-info,
+  #pointer{
+    font-size: 1.125rem;
   }
 
 
@@ -462,7 +544,7 @@ footer p {
   }
 
   .hero-area {
-    padding-top: 65rem;
+    padding-top: 60rem;
     /*to see the whole hero image*/
   }
 
@@ -474,6 +556,11 @@ footer p {
 
   .gallery-items {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .project-info, 
+  #pointer{
+    font-size: 1.25rem;
   }
 
 
@@ -501,6 +588,13 @@ footer p {
   #phone p {
     font-size: 1.125em;
   }
+
+  /*Project*/
+
+  #cards-info{
+    word-wrap: break-word;
+  }
+
 
 
   footer {
